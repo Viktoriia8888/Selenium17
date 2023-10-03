@@ -18,8 +18,7 @@ public class XpathHW {
         address.sendKeys("Edmonton,4588 104 St. T6M2Z9");
         WebElement permanent=driver.findElement(By.xpath("//textarea[@id='permanentAddress']"));
         permanent.sendKeys("Edmonton,4588 104 St. T6M2Z9");
-        WebElement submit=driver.findElement(By.xpath("//button[contains(text(),'Submit')]"));
-        submit.click();
+        driver.findElement(By.xpath("//button[contains(text(),'Submit')]")).click();
     }
 
 
