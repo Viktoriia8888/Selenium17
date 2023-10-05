@@ -1,0 +1,26 @@
+DropDown:
+   - does it have a select tag?   <Select>
+   if yes - use Select class in selenium to deal with it
+   if no - deal with it like a normal Web Element
+
+  If  <Select>:
+   1. Locate the DD;
+   2. Create an Obj of Select class and pass in the Web element;
+   3. Use method from Select class ro select the desired option:
+          .byVisibleText();
+          .byIndex(); indexing in DD starts from 0!
+          .byValue();
+
+ Multi Select DD:
+   1. Locate WebElement;
+   2. Create an Obj of Select class and pass in the Web element;
+   3. Use available methods to select the desired element:
+           .byVisibleText();
+           .byIndex(); indexing in DD starts from 0!
+           .byValue();
+        Additional methods for MultiSelectDD:
+           .DeselectByIndex();
+           .DeselectByVisibleText();
+           .DeselectByValue();
+
+        IsMultiple() --> returns true if the DD is multiSelect
